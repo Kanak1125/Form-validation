@@ -1,0 +1,42 @@
+<!-- form validation in client side -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+    <script src="./scripts/validate.js" defer></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Sign up</legend>
+        <form id="form" action="">
+            <div id="uname-container" class="container">
+                <label for="uname">Username:</label><br>
+                <input type="text" id="uname" name="uname">
+                <div class="error"></div>
+            </div><br>
+            <div id="email-container" class="container">
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"> 
+                <div class="error"></div>
+            </div><br>
+            <!-- <input type="text" id="uname" name="uname" onchange="handleChange(this)"> <br><br> -->
+            <div id="password-container" class="container">
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" id="password">
+                <div class="error"></div> 
+            </div><br>
+            <div id="c-password-container" class="container">
+                <label for="c_password">Confirm Password:</label><br>
+                <input type="password" name="c_password" id="c_password">
+                <div class="error"></div> 
+            </div><br>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html>

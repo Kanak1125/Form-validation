@@ -1,0 +1,80 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url("https://w0.peakpx.com/wallpaper/968/55/HD-wallpaper-calm-nature-nature-mountains-pink-sky.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+fieldset {
+    padding: 20px 40px;
+    width: 60vw;
+    border: 1px solid white;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+legend {
+    color: white;
+}
+
+.container {
+    position: relative;
+    margin: 3px 0;
+    color: white;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    padding: 10px 1rem;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 300ms ease-out;
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.error {
+    position: absolute;
+    font-size: 13px;
+    margin: 3px;
+    color: lightcoral;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 300ms linear;
+}
+
+button:hover {
+    color: white;
+    background: transparent;
+}
